@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mariya's Portfolio">
+    <title>Mariya Iram | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mariya Iram Abdul Lateef</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Full Stack Developer | Problem Solver | Cybersecurity Enthusiast</p>
+        <button onclick="scrollToSection('projects')">View My Projects</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate developer with expertise in Java, SQL, Linux, and Cybersecurity. I love building functional and user-friendly websites.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>JavaScript</li>
+            <li>HTML/CSS</li>
+            <li>React.js</li>
+            <li>Linux Administration</li>
+            <li>Cybersecurity</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-item">
+            <h3>Online Unused Medicine Donation System</h3>
+            <p>A system that connects unused medicines with people in need.</p>
+            <a href="#" class="btn" onclick="showProjectDetails('medicine')">View Details</a>
+        </div>
+        <div class="project-item">
+            <h3>Event Management System</h3>
+            <p>An efficient solution for managing events and tasks.</p>
+            <a href="#" class="btn" onclick="showProjectDetails('event')">View Details</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Mariya Iram. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
